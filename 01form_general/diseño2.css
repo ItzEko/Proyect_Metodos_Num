@@ -1,0 +1,109 @@
+/* EMPEZAMOS A PONER TIPOGRAFIA AL TITULO */
+body {
+  font-size: larger;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+img {
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+}
+h2 {
+  display: inline-block;
+  position: relative;
+  font-family: "Dancing Script", cursive;
+}
+h2::after,
+h2::before {
+  content: "";
+  position: absolute;
+  width: 128px;
+  height: 3px;
+  background-color: black;
+  top: 0.6em;
+}
+h2::before {
+  left: -148px;
+}
+h2::after {
+  right: -140px;
+}
+
+/* LOGO DEL INSTITUTO */
+.derecha {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+/* AQUI EMPIEZA EL CODIGO PARA LA ANIMACION DE COLORES PARA LOS PASOS */
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  /* hay que poner height: auto; para que automaticamente este se expanda conforme a la pantalla */
+  height: auto;
+  color: #110101;
+  background: linear-gradient(
+    50deg,
+    rgb(130, 57, 255),
+    rgb(91, 207, 201),
+    rgb(8, 133, 85),
+    rgb(235, 59, 97)
+  );
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 10s ease-in-out infinite;
+
+}
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/* TERMINA LA ANIMACION */
+.container {
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  margin: 100px auto;
+  position: relative;
+}
+.container img{
+  width: 500px;
+  height: 350px;
+}
+.container p{
+  position: absolute;
+  /* movimiento de la palabra arriba y abajo */
+ top:50%; 
+ left:50%;
+}
+.contenedor1{
+  width: 400px;
+  height: 10px;
+  padding: 5px;
+  margin: 100px auto;
+  position: relative;
+}
+.contenedor1 img{
+  width: 200px;
+  height: 80px;
+  padding-bottom:10px;
+}
+.contenedor1 p{
+  position: absolute;
+  /* movimiento de la palabra arriba y abajo */
+ top:300%; 
+ left:45%;
+
+}
+

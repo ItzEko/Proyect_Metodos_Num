@@ -1,0 +1,54 @@
+body {
+  /* padding: 16px; */
+  /* background-color: #237971; */
+  font-family: "Avenir", sans-serif;
+  /* color: #192735; */
+  background-image:url(img/esquina01.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  /* background-attachment:fixed; */
+  background-color:linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
+  background-position: center;
+}
+ /* body:before {
+  content:"";
+  min-height:100vh;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:linear-gradient(90deg, #52c4df,#ad55c1);
+  opacity:0.5;
+  z-index:-1;
+}   */
+/* AQUI NOS VAMOS A ACOMODAR LO QUE ESTA ATRAS OSEA LA IMAGEN */
+img {
+  width:700px;
+  height:200px;
+  padding: 5px;
+}
+/* AQUI EN FORM-CONTROL ESTAMOS EDITANDO LOS INPUTS */
+.form-control{
+
+  width: 400px;
+  background-color: #33475b;
+  border:2px;
+}
+.cuadro{
+  position: relative;
+  display:inline-block;
+  width:50px;
+  height: 50px;
+  padding: 5px;
+}
+.derecha{
+  float:left;
+  width:150px;
+  height: 150px;
+}
+.izquierda{
+  float:right;
+  width:100px;
+  height: 100px;
+  padding: 5px;
+}
+
