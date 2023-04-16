@@ -79,7 +79,7 @@ if (isset($_POST["calcular"])) {
       ?>
       </p>
       <?php 
-      echo ("Por lo que nos saldra como resultado de la suma el resulatado siguiente: ");
+      echo ("Por lo que nos saldra como resultado de la suma el resultado siguiente: ");
       ?>
       <p>
         <?php

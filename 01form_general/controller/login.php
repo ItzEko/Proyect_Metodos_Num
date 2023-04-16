@@ -2,8 +2,6 @@
 session_start();
 
 require_once '../assets/conexion.php';
-
-
 if(!empty($_POST["btnlogin"])){
     if(!empty($_POST["email"]) and !empty($_POST["pswd"])){
         $corr=$_POST["email"];

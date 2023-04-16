@@ -196,7 +196,6 @@ COMIENZA LAS TARJETAS DE INFORMACION -------------------------------------------
 .cards-info .card-three button{
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color:DarkCyan; border-color:SteelBlue; color:white; border-radius:25%; width: 80px;
   height: 40px;
 }
 .cards-info .card-three a{
