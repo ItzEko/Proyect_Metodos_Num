@@ -1,37 +1,33 @@
 body {
-  /* padding: 16px; */
-  /* background-color: #237971; */
-  font-family: "Avenir", sans-serif;
-  /* color: #192735; */
-  background-image:url(img/esquina01.png);
+  background-image:url(img/esquina0101.png);
   background-repeat:no-repeat;
   background-size:cover;
-  /* background-attachment:fixed; */
-  background-color:linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
   background-position: center;
+  display: grid;
 }
- /* body:before {
-  content:"";
-  min-height:100vh;
-  position:absolute;
-  top:0;
-  left:0;
-  background-color:linear-gradient(90deg, #52c4df,#ad55c1);
-  opacity:0.5;
-  z-index:-1;
-}   */
-/* AQUI NOS VAMOS A ACOMODAR LO QUE ESTA ATRAS OSEA LA IMAGEN */
 img {
   width:700px;
   height:200px;
   padding: 5px;
 }
+.container-title h2{
+  margin-top: 66px;
+  font-family: 'Times New Roman', Times, serif;
+  color: antiquewhite;
+  text-align:center;
+  font-size: 38px;
+  text-shadow: 0 0 5px rgb(22, 219, 219),
+    0 0 25px  rgb(22, 219, 219),
+    0 0 50px  rgb(22, 219, 219),
+    0 0 100px  rgb(22, 219, 219);
+}
 /* AQUI EN FORM-CONTROL ESTAMOS EDITANDO LOS INPUTS */
-.form-control{
-
+.container .form-control{
   width: 400px;
-  background-color: #33475b;
-  border:2px;
+  background-color: #6fc9c9;
+  border:10px;
+  border-color: rgb(0, 174, 255);
+  font-family: 'Times New Roman', Times, serif;
 }
 .cuadro{
   position: relative;
@@ -40,15 +36,170 @@ img {
   height: 50px;
   padding: 5px;
 }
-.derecha{
+
+.container-title .derecha{
   float:left;
   width:150px;
   height: 150px;
 }
-.izquierda{
+.container-title .izquierda{
   float:right;
-  width:100px;
-  height: 100px;
+  width:150px;
+  height: 150px;
   padding: 5px;
 }
+.container h3{
+  text-shadow: 7px 4px 5px rgb(0, 0, 0);
+  color: rgb(142, 212, 212);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin-top: 100px;
+}
+.container p{
+  text-shadow: 7px 4px 5px rgb(0, 0, 0);
+  margin-top: 50px;
+  border: ridge #064B48 5px; 
+  font-family:'Times New Roman', Times, serif; 
+  color: rgb(142, 212, 212);
+  font-size: 24px;
+  /* EFECTO DE TEXTO QUE SALE POR LA DERECHA */
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* TERMINA EFECTO */
+.container label{
+  text-shadow: 7px 4px 5px rgb(0, 0, 0);
+  margin-top: 40px;
+  color:rgb(187, 255, 187);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+.container img{color: aqua;
+  filter: drop-shadow(4px 6px 12px rgba(94, 255, 255, 0.788) );}
+/* 
+COMIENZA LAS TARJETAS DE INFORMACION ---------------------------------------------------*/
+.cards-info{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
 
+
+.cards-info .card-one {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(82, 153, 153);
+  background-color: #064B48;
+  border-radius: 25%;
+  overflow: hidden;
+  text-align:center;
+  align-items: center;
+  width: 30%;
+  /* PARA PONER LA ANIMACION DE ZOOM EN UN CONTENDOR O EN UNA IMAGEN SE HACE CON LO SIGUIENTE: */
+  transition: 0.5s;
+  object-fit: cover;
+}
+/* LA TRANSICION DE ZOOM */
+.cards-info .card-one:hover{
+  transform:scale(1.2);
+}
+.cards-info .card-one h3{
+  margin-top: 10px;
+  color: rgb(142, 212, 212); font-family:'Times New Roman', Times, serif; text-shadow: 7px 4px 5px rgb(0, 0, 0);
+}
+.cards-info .card-one img{
+  width: 150px;
+  height: 150px;
+}
+.cards-info .card-one button{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color:DarkCyan; border-color:SteelBlue; color:white; border-radius:25%; width: 80px;
+  height: 40px;
+}
+.cards-info .card-one a{
+  color: rgb(187, 233, 218);
+  text-decoration: none;
+}
+/* --------------------------------------- */
+.cards-info .card-two {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(82, 153, 153);
+  background-color: #064B48;
+  border-radius: 25%;
+  overflow: hidden;
+  /* PARA PONER LA ANIMACION DE ZOOM EN UN CONTENDOR O EN UNA IMAGEN SE HACE CON LO SIGUIENTE: */
+  transition: 0.5s;
+  object-fit: cover;
+  width: 30%;
+  text-align:center;
+  align-items: center;
+}
+.cards-info .card-two h3{
+  margin-top: 10px;
+  color: rgb(142, 212, 212); font-family:'Times New Roman', Times, serif; text-shadow: 7px 4px 5px rgb(0, 0, 0);
+}
+.cards-info .card-two:hover{
+  transform:scale(1.2);
+}
+.cards-info .card-two img{
+  width: 200px;
+  height: 150px;
+}
+.cards-info .card-two button{
+  margin-top: 20px;
+  background-color:DarkCyan; border-color:SteelBlue; color:white; border-radius:25%; width: 100px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.cards-info .card-two a{
+  color: rgb(187, 233, 218);
+  text-decoration: none;
+}
+/* --------------------------------------- */
+.cards-info .card-three {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(82, 153, 153);
+  background-color: #064B48;
+  border-radius: 25%;
+  overflow: hidden;
+  /* PARA PONER LA ANIMACION DE ZOOM EN UN CONTENDOR O EN UNA IMAGEN SE HACE CON LO SIGUIENTE: */
+  transition: 0.5s;
+  object-fit: cover;
+  width: 30%;
+  text-align:center;
+  align-items: center;
+}
+.cards-info .card-three h3{
+  margin-top: 10px;
+  color: rgb(142, 212, 212); font-family:'Times New Roman', Times, serif; text-shadow: 7px 4px 5px rgb(0, 0, 0);
+}
+.cards-info .card-three:hover{
+  transform:scale(1.2);
+}
+.cards-info .card-three img{
+  width: 200px;
+  height: 170px;
+}
+.cards-info .card-three button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color:DarkCyan; border-color:SteelBlue; color:white; border-radius:25%; width: 80px;
+  height: 40px;
+}
+.cards-info .card-three a{
+  color: rgb(187, 233, 218);
+  text-decoration: none;
+}
