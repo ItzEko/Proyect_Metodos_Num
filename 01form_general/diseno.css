@@ -86,6 +86,74 @@ img {
 }
 .container img{color: aqua;
   filter: drop-shadow(4px 6px 12px rgba(94, 255, 255, 0.788) );}
+
+
+  /* CACULADORAS DE LAS OTRAS ECUACIONES  */
+.ecuations{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    /* border: 2px solid blue; */
+    justify-content:space-around;
+  }
+.ecuations .ecuation-one{
+    background-color: #1e5155;
+    border-radius: 10%;
+    color: rgb(142, 212, 212); font-family:monospace;  text-shadow: 7px 4px 5px rgb(0, 0, 0);
+    width: 200px;
+    filter: drop-shadow(4px 6px 12px rgb(1, 39, 39) );
+    transition: 0.5s;
+    object-fit: cover;
+  }
+.ecuations .ecuation-one:hover{
+  transform: scale(1.2);
+}
+.ecuations .ecuation-one button{
+  margin-left: 40%;
+  margin-bottom: 15px;
+  border: 0.5px solid rgb(0, 225, 255) ;
+    border-radius: 30%;
+    background-color: rgb(4, 31, 22);
+  }
+  .ecuations .ecuation-one button a{
+    font-style: none;
+    font-family: monospace;
+    font-size: 20px;
+    color: #37ece3;
+    text-shadow: 0 0 5px rgb(22, 219, 219),
+    0 0 25px  rgb(22, 219, 219),
+    0 0 50px  rgb(22, 219, 219),
+    0 0 100px  rgb(22, 219, 219);
+}
+.ecuations .ecuation-two{
+  background-color: #1e5155;
+  border-radius: 10%;
+  color: rgb(142, 212, 212); font-family:monospace;  text-shadow: 7px 4px 5px rgb(0, 0, 0);
+  width: 200px;
+  filter: drop-shadow(4px 6px 12px rgb(1, 39, 39) );
+  transition: 0.5s;
+  object-fit: cover;
+}
+.ecuations .ecuation-two:hover{
+transform: scale(1.2);
+}
+.ecuations .ecuation-two button{
+  margin-left: 40%;
+  margin-bottom: 15px;
+    border: 0.5px solid rgb(0, 225, 255) ;
+    border-radius: 30%;
+    background-color: rgb(4, 31, 22);
+  }
+.ecuations .ecuation-two button a{
+  font-style: none;
+  font-family: monospace;
+  font-size: 20px;
+  color: #00fff2;
+    text-shadow: 0 0 5px rgb(22, 219, 219),
+    0 0 25px  rgb(22, 219, 219),
+    0 0 50px  rgb(22, 219, 219),
+    0 0 100px  rgb(22, 219, 219);
+  }
 /* 
 COMIENZA LAS TARJETAS DE INFORMACION ---------------------------------------------------*/
 .cards-info{
@@ -194,6 +262,7 @@ COMIENZA LAS TARJETAS DE INFORMACION -------------------------------------------
   height: 170px;
 }
 .cards-info .card-three button{
+  background-color:DarkCyan; border-color:SteelBlue; color:white; border-radius:25%; width: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 40px;

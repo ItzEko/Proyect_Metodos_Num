@@ -2,7 +2,6 @@
 session_start();
 
 require_once '../assets/conexion.php';
-if(!empty($_POST["btnlogin"])){
     if(!empty($_POST["email"]) and !empty($_POST["pswd"])){
         $corr=$_POST["email"];
         $pass=$_POST["pswd"];
@@ -20,7 +19,6 @@ if($ok=$resultado->fetch_object()){
     }else{
         echo "<div class='alert alert-primary'>los campos estan vacios </div>";
     }
-}
 
 
 ?>

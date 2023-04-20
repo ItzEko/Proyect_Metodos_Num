@@ -5,13 +5,11 @@
 <meta http-equiv="Last-Modified" content="0">
   <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
   <meta http-equiv="Pragma" content="no-cache">
-  
-
   <?php require_once 'librerias.php'; //mandamos a traer las librerias  
   ?>
     <div class="container-title">
-    <img class="izquierda" src="./img/logo.png">
-    <img class="derecha" src="./img/itsvcLOGO.png">
+    <img class="izquierda" src="./img/calcu02.png">
+    <img class="derecha" src="./img/logocalcu.png">
     <h2><strong>CALCULADORA DE ECUACIONES DE SEGUNDO GRADO </strong>  </h2>
     </div>
 </head>
@@ -45,9 +43,24 @@
         <button type="submit" style="background-color:DarkCyan; border-color:SteelBlue; color:white; border-radius:400px; width:200px;" name="calcular">Calcular</button>
         <br>
         <br>
+        
       </div>
     </center>
   </form>
+  <div class="ecuations">
+          <div class="ecuation-one">
+            <p><center>Ecuaciones de </center> </p>
+            <p><center>primer grado </center></p>
+            <p><center>(ejemplo)</center></p>
+              <button><a href="./assets/ecuation-one.php">Ver</a></button>
+          </div>
+          <div class="ecuation-two">
+            <p><center>Ecuaciones de </center></p>
+            <p><center>primer grado</center></p>
+            <p><center>(ejemplo)</center></p>
+              <button><a href="./assets/ecuation-two.php">Ver</a></button>
+          </div>
+      </div>
   <div class="cards-info">
       <div class="card-one">
       <h3>Ecuación</h3>
@@ -66,5 +79,4 @@
       </div>
     </div>
 </body>
-
 </html>
